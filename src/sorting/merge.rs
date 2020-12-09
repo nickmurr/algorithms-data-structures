@@ -1,6 +1,6 @@
 pub fn sort<T>(mut v: Vec<T>) -> Vec<T>
-    where
-        T: PartialOrd + std::fmt::Debug,
+where
+    T: PartialOrd + std::fmt::Debug,
 {
     // sort the left half,
     // sort the right half, O(n*log(n))
@@ -52,7 +52,7 @@ pub fn sort<T>(mut v: Vec<T>) -> Vec<T>
 
 #[cfg(test)]
 mod tests {
-    use crate::{sorting::merge::sort};
+    use crate::sorting::merge::sort;
 
     #[test]
     fn test_merge_sort() {

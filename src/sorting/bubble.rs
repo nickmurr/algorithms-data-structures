@@ -1,8 +1,8 @@
 // O(n^2)
 
 pub fn sort<T>(v: &mut [T])
-    where
-        T: PartialOrd + std::fmt::Debug,
+where
+    T: PartialOrd + std::fmt::Debug,
 {
     for p in 0..v.len() {
         let mut sorted = true;
@@ -20,7 +20,7 @@ pub fn sort<T>(v: &mut [T])
 
 #[cfg(test)]
 mod tests {
-    use crate::{sorting::bubble::sort};
+    use crate::sorting::bubble::sort;
 
     #[test]
     fn test_bubble_sort() {

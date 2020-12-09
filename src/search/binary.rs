@@ -2,8 +2,8 @@
 
 /// binary_search - O(log*N)
 pub fn search<T>(data: &[T], item: T) -> Option<usize>
-    where
-        T: PartialOrd,
+where
+    T: PartialOrd,
 {
     /// low, high - contains limits of list part, we searching on
     // В переменных low и high хранятся границы той части списка,
@@ -46,4 +46,3 @@ mod tests {
         assert_eq!(search(&arr, "f"), Some(4));
     }
 }
-
